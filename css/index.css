@@ -1,0 +1,283 @@
+*{margin:0;padding:0;box-sizing: border-box}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+body{
+    font-size: 16px;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    "PingFang SC",
+    "Hiragino Sans GB",
+    STHeiti,
+    "Microsoft YaHei",
+    "Microsoft JhengHei",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC",
+    "WenQuanYi Micro Hei",
+    SimSun,
+    sans-serif;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.page{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+}
+.pageLeft{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #A29177;
+ }
+ .pageLeft > h1{
+    margin: 35px 5px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+ }
+#ul1 li{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+#ul1 li.active{
+    color: #A29177;
+    background: #fff;
+}
+.pageLeft > a{
+    display: block;
+    width: 110px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #A29177;
+    border: 3px solid #fff;
+    font-weight: bold;
+    margin: 50px auto;
+}
+.pageLeft > a:hover{
+    background: #A29177;
+    border: 3px solid #fff;
+    color: #fff;
+}
+.pageLeft .logo{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageLeft .logo > a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+.pageLeft .logol > a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40px;
+    heigh: 40px;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+}
+.pageLeft .logo svg{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
+}
+.pageLeft .bai svg{
+    fill: #000;
+}
+.pageLeft .lv{
+    background: #00AB6C;
+}
+.pageLeft .he{
+    background: #584613;
+}
+.pageLeft .bai{
+    background: #fff;
+}
+.pageLeft .hong{
+    background: #960E0E;
+}
+.pageRight{
+    width: 100%;
+    margin-left: 250px;
+}
+.pageRight .content1{
+    width: 100%;
+}
+.pageRight .wallpaper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 230px;
+    background: rgba(0,0,0,0.8);
+}
+.pageRight .wallpaper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('http://owzgsczvw.bkt.clouddn.com/wallpaper.jpg') no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+}
+.pageRight .wallpaper .headpic{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    background: url('http://owzgsczvw.bkt.clouddn.com/myself.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.pageRight .wallpaper > h1{
+    font-weight: normal;
+}
+.pageRight .wallpaper > p{
+    line-height: 1.5;
+}
+.pageRight .wallpaper .spanL{
+    color: #E91E63;
+    border: 1px solid #CFD8DC;
+    background: #EEEEEE;
+    border-radius: 2px;
+    padding: 2px;
+}
+.pageRight .wallpaper .dscp{
+    margin: 15px auto;
+    width: 680px;
+}
+.pageRight .wallpaper .dscp strong{
+    margin: 0 2px;
+    color: #E91E63;
+}
+.pageRight .wallpaper .div1{
+    margin-top: 15px;
+    text-align: center;
+}
+#ul2 li{
+    display: none;
+}
+#ul2 li.active{
+    display: flex;
+}
+.pageRight .content3{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.pageRight .content3 .skill{
+    /*border: 1px solid red;*/
+    color: #585858;
+}
+.pageRight .content3 .skill p{
+    display: block;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+.pageRight .content3 .skill span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #585858;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.pageRight .content3 .tag{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.pageRight .content3 .tag span{
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    background: #607d8b;
+    border-radius: 3px;
+    color: #FAFAFA;
+    box-shadow: 0 3px 10px #888888;
+}
+.pageRight .content3 .tag .dark{
+    opacity: 0.5;
+}
+.pageRight .content4{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+}
+.pageRight .content4 .lianxi{
+    display: block;
+}
+.pageRight .content4 .lianxi svg{
+    fill: #585858;
+    transform: scale(1.4);
+    margin-right: 20px;
+}
+.pageRight .content4 .lianxi p{
+    font-size: 30px;
+    line-height: 45px;
+    margin: 15px;
+    color: #585858;
+}
+.pageRight .content4 .lianxi .last > svg{
+    vertical-align: middle;
+    margin-top: 60px;
+    transform: scale(1.5);
+}
+.pageRight .content4 .lianxi img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    vertical-align: top;
+}
+.pageRight .content4 .lianxi span:hover{
+    color: #EB1E63;
+}

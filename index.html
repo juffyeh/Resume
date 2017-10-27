@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juff's Resume</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+<body>
+    <div class="page">
+        <div class="pageLeft">
+            <h1>Juff's Resume</h1>
+            <ul id="ul1">
+                <li class="active">个人 About Me</li>
+                <li>项目 Projects</li>
+                <li>技能 My Skill</li>
+                <li>联系 Content</li>
+            </ul>
+            <a href="">下载PDF简历</a>
+            <div class="logo">
+                <a href="" class="lv"><svg class="icon"><use xlink:href="#icon-mail"></use></svg></a>
+                <a href="http://www.jianshu.com/users/aa5986373d5e/timeline" target="_blank" class="he"><svg class="icon"><use xlink:href="#icon-jshu"></use></svg></a>
+                <a href="https://github.com/juffyeh" target="_blank" class="bai"><svg class="icon"><use xlink:href="#icon-github"></use></svg></a>
+                <a href="" class="hong"><svg class="icon"><use xlink:href="#icon-weibo"></use></svg></a>
+            </div>
+        </div>
+        <div class="pageRight">
+            <ul id="ul2">
+                <li class="active" class="content1">
+                    <div class="wallpaper">
+                        <div class="headpic"></div>
+                        <h1>叶俊锋</h1>
+                        <p>一入代码深似海，勤则强，平则庸，我不甘平庸</p>
+                        <div class="div1">
+                           <span class="spanL">意向职位</span>
+                           <span>前端工程师</span>
+                        </div>
+                        <div class="div1">
+                           <span class="spanL">教育背景</span>
+                           <span>2015年毕业于宁波大学科技学院</span>
+                        </div>
+                        <p class="dscp">对我而言，前端是很奇特的，它不会一尘不变，只要你有想法，总会给人一种眼前一亮的感觉！</p>
+                        <p class="dscp">
+                            我对前端的浓厚兴趣就源于他的多变性，
+                            自己也是<strong>思维活跃</strong>，
+                            <strong>追求完美</strong>的一个人，总想做到极致，同时我对一些新技术也充满了好奇之心！
+                        </p>
+                    </div>
+                </li>
+                <li class="content2">2</li>
+                <li class="content3">
+                    <div class="skill">
+                        <p><span></span>熟练掌握HTML、CSS、JavaScript，具有像素级还原设计稿的能力</p>
+                        <p><span></span>CSS3动画、Flex布局、CSS2布局</p>
+                        <p><span></span>基本掌握原生Javascript，掌握重要概念如：原型， 闭包， AJAX， 面向对象， 异步流程控制等</p>
+                        <p><span></span>能够根据面向对象思想利用JS/jQuery 封装常用插件</p>
+                        <p><span></span>手机端页面调试，使用动态REM适配所有手机屏幕</p>
+                        <p><span></span>了解jQuery常见API编写jQuery插件</p>
+                        <p><span></span>了解HTTP协议，知道HTTP请求、响应的定义</p>
+                    </div>
+                    <div class="tag">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span class="dark">React</span>
+                        <span>HTTP</span>
+                        <span>AJAX</span>
+                        <span class="dark">Bootstrap</span>
+                        <span class="dark">Vue</span>
+                        <span class="dark">PhotoShop</span>
+                    </div>
+                </li>
+                <li class="content4">
+                    <div class="lianxi">
+                        <p><svg class="icon"><use xlink:href="#icon-google"></use></svg><span>y934652952@gmail.com</span></p>
+                        <p><svg class="icon"><use xlink:href="#icon-qq"></use></svg><span>934652952</span></p>
+                        <p><svg class="icon"><use xlink:href="#icon-dianhua"></use></svg><span>18815289449</span></p>
+                        <p class="last"><svg class="icon"><use xlink:href="#icon-weixin"></use></svg><img src="http://owzgsczvw.bkt.clouddn.com/name.png"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_443087_wn7uk2chvie8kt9.js"></script>
+<script>
+    $('#ul1').on('click','li',function(e){
+        let $li = $(e.currentTarget)
+        let index = $li.index()
+        $li.addClass('active')
+        $li.siblings('.active').removeClass('active')
+        $('#ul2').children().eq(index).addClass('active')
+        $('#ul2').children().eq(index).siblings('.active').removeClass('active')
+    })
+</script>
+</html>
