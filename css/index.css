@@ -49,7 +49,7 @@ body{
     font-size: 30px;
     text-align: center;
  }
-#ul1 li{
+#listLeft li{
     display: block;
     color: #fff;
     text-align: center;
@@ -58,7 +58,7 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-#ul1 li.active{
+#listLeft li.active{
     color: #A29177;
     background: #fff;
 }
@@ -195,10 +195,10 @@ body{
     margin-top: 15px;
     text-align: center;
 }
-#ul2 li{
+#listRight li{
     display: none;
 }
-#ul2 li.active{
+#listRight li.active{
     display: flex;
 }
 .pageRight .content3{
