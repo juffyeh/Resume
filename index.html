@@ -9,12 +9,12 @@
     <div class="page">
         <div class="pageLeft">
             <h1>Juff's Resume</h1>
-            <ul id="ul1">
+            <ol id="listLeft">
                 <li class="active">个人 About Me</li>
                 <li>项目 Projects</li>
                 <li>技能 My Skill</li>
                 <li>联系 Content</li>
-            </ul>
+            </ol>
             <a href="">下载PDF简历</a>
             <div class="logo">
                 <a href="" class="lv"><svg class="icon"><use xlink:href="#icon-mail"></use></svg></a>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="pageRight">
-            <ul id="ul2">
+            <ol id="listRight">
                 <li class="active" class="content1">
                     <div class="wallpaper">
                         <div class="headpic"></div>
@@ -78,20 +78,20 @@
                         <p class="last"><svg class="icon"><use xlink:href="#icon-weixin"></use></svg><img src="http://owzgsczvw.bkt.clouddn.com/name.png"></p>
                     </div>
                 </li>
-            </ul>
+            </ol>
         </div>
     </div>
 </body>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="//at.alicdn.com/t/font_443087_wn7uk2chvie8kt9.js"></script>
 <script>
-    $('#ul1').on('click','li',function(e){
+    $('#listLeft').on('click','li',function(e){
         let $li = $(e.currentTarget)
         let index = $li.index()
         $li.addClass('active')
         $li.siblings('.active').removeClass('active')
-        $('#ul2').children().eq(index).addClass('active')
-        $('#ul2').children().eq(index).siblings('.active').removeClass('active')
+        $('#listRight').children().eq(index).addClass('active')
+        $('#listRight').children().eq(index).siblings('.active').removeClass('active')
     })
 </script>
 </html>
